@@ -24,7 +24,8 @@ function CalculateValue() {
 function ClearData() {
     input_box.value="";
 }function backSpace(){
-    screenView.value = screenView.value.slice(0, - 1);
+    var value = document.getElementById("calculation").value;
+    document.getElementById("calculation").value = value.substr(0, value.length - 1);
 }
 
 function showLogdata() {
